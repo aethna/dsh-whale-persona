@@ -1,0 +1,38 @@
+{
+  "name": "dsh-whale-persona",
+  "version": "0.2.0",
+  "description": "DSH 人格与记忆插件（通用版）：把角色设定、长期人格沉淀与跨会话记忆注入系统提示，并提供读写工具和输入栏开关。",
+  "type": "module",
+  "main": "lib/index.mjs",
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "exports": {
+    ".": "./lib/index.mjs",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "dependencies": {
+    "schemastery": "^3.18.0"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "persona",
+    "memory"
+  ],
+  "license": "MIT"
+}

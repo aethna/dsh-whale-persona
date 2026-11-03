@@ -1,0 +1,8 @@
+# dsh-whale-persona · bundle patch
+# 把插件插进 web profile：
+#   Node half（lib/index.mjs）注册提示词段（角色设定 + 人格沉淀 + 共享记忆）、
+#   4 个记忆/人格工具，以及 settings 命名空间 whale-persona；
+#   client half（lib/client.js）由 __ModuleLoader__ 挂载对话输入栏的开关按钮。
+- insert:
+    - id: whale-persona
+      name: 'dsh-whale-persona'
